@@ -249,17 +249,18 @@
     <div class="contact-box">
         <h2>Ready to start?</h2>
         <p>Get a free, no-obligation quote.</p>
-        <form action="#">
-            <input type="text" placeholder="Your name" required>
-            <input type="email" placeholder="Email address" required>
-            <select class="full">
-                <option>Service Types</option>
-                <option>Videoclip</option>
-                <option>Technical Inspection</option>
-                <option>Weddings / Events</option>
-                <option>Corporate content</option>
-            </select>
-            <textarea class="full" rows="5" placeholder="Tell us about the location and the type of recording you want."></textarea>
+        <form action="https://formspree.io/f/maqvnrag" method="POST">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Email address" required>
+            <select class="full" name="service" required>
+                <option value="" disabled selected>Service Types</option>
+                <option value="Videoclip">Videoclip</option>
+                <option value="Technical Inspection">Technical Inspection</option>
+                <option value="Weddings / Events">Weddings / Events</option>
+                <option value="Impossible Camera Shots">Impossible Camera Shots</option>
+                <option value="Video Editing">Video Editing</option>
+            </select> 
+            <textarea class="full" rows="5" name="message" placeholder="Tell us about the location and the type of recording you want." required></textarea>
             <button type="submit" class="full submit-btn">Submit proposal</button>
         </form>
     </div>
